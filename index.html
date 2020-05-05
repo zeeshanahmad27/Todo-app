@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--BOOTSTRAP LINKS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!--GOOGLE FONTS LINK-->
+    <link href="https://fonts.googleapis.com/css?family=Gelasio|Monoton|Shojumaru|Sirin+Stencil&display=swap"
+        rel="stylesheet">
+    <!--APP ICON LINK-->
+    <link rel="shortcut icon" href="todo4.png">
+    <title>Document</title>
+</head>
+<body>
+
+    <section class="main_section x-section ">
+        <div class="row">
+            <div class="col-3 col3 ">
+                <h2 class="project">Project TODO</h2> <span class="todo first-btn link">
+                        <hr> ALL TODO's
+                        <hr></span>
+            </div>
+            <div class="col-9 col9 lg1">
+
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+            TODO INPUT's</h1>
+          <form id="book-form">
+            <div class="form-group">
+              <label for="title" class="all">TITLE</label>
+              <input type="text" id="title" class="form-control" autocomplete="off" spellcheck="false" >
+            </div>
+            <div class="form-group">
+              <label for="Time" class="all">TIME</label>
+              <input type="time" id="time" class="form-control" spellcheck="false">
+            </div>
+            <div class="form-group">
+              <label for="description" class="all">DESCRIPTION</label>
+              <input type="text" id="description" class="form-control" autocomplete="off" spellcheck="false">
+            </div>
+            <input type="submit" value="ADD TODO" class="btn btn-dark btn-block black-btn">
+          </form>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<section class="main_section y-section pink-section ">
+
+       
+      
+  
+
+    <div class="row">
+        <div class="col-3 col3 ">
+            <h2 class="project">Project TODO</h2> <span class="todo first-btn link1">
+                    <hr> Add New Todo's
+                    <hr></span>
+        </div>
+        <div class="col-9 col9 lg2">
+            <h1 class="todo-second">TODO LIST</h1>
+          <table class="table table-striped mt-5">
+            
+
+            
+       
+      
+          
+      
+            <thead>
+              <tr class="tari">
+                <th>TITLE</th>
+                <th>TIME</th>
+                <th>DESCRIPTION</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+          </table>
+      </div>
+    
+</div>
+</div>
+</div>
+
+</section>
+
+<script src="index.js"></script>    
+</body>
+</html>
